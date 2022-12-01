@@ -1,8 +1,7 @@
 import { Router } from 'express';
+import ArticleCreateController from '../controller/article_create_controller';
 
 export const routerApp = Router();
 
 // register all routes here
-routerApp.post('/health', (req, res) => {
-  res.send('oke')
-})
+routerApp.post('/', ArticleCreateController);

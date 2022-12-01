@@ -6,9 +6,7 @@ export class PostsTable extends Model<InferAttributes<PostsTable>, InferCreation
   declare title: string;
   declare content: string;
   declare category: string;
-  declare status: 'Publish' | 'Draft' | 'Thrash';
-  declare createdAt: Date;
-  declare updatedAt: Date;
+  declare status: string;
 }
 
 
@@ -39,27 +37,17 @@ export default function setupPostsTable() {
       },
       status: {
         type: DataTypes.STRING(100),
-        field: 'Status',
-        defaultValue: 'Draft'
-      },
-      createdAt: {
-        type: DataTypes.DATE,
-        field: 'Created_date',
-        defaultValue: Sequelize.fn('now')
-      },
-      updatedAt: {
-        type: DataTypes.DATE,
-        field: 'Updated_date',
-        defaultValue: Sequelize.fn('now')
-      },
+        field: 'Status'
+      }
     },
     {
       sequelize: sequelizeConnection,
-      timestamps: false,
-      underscored: true,
-      tableName: 'posts'
+      timestamps: true,
+      tableName: 'posts',
+      createdAt: 'Created_date',
+      updatedAt: 'Updated_date'
     }
   );
 
-  PostsTable.sync();
+  PostsTable.sync({ alter: true });
 }
