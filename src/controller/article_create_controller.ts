@@ -18,8 +18,6 @@ export default async function ArticleCreateController(
     });
   } catch (error: any) {
     if (error instanceof ValidationError) {
-      console.log(error);
-      
       res.status(400).send({
         result: false,
         message: error.details ? Object.values(error.details).join('---') : 'bad request format'
