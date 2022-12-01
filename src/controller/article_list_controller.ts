@@ -24,7 +24,7 @@ export default async function ArticleListController(
     const limit = parseInt(req.params['limit']);
     const offset = parseInt(req.params['offset']);
     const articles = await ArticleListService(limit, offset);
-    res.status(201).send({
+    res.status(200).send({
       result: true,
       message: 'success',
       data: {
