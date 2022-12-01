@@ -14,7 +14,7 @@ export default async function ArticleCreateController(
     await ArticleCreateService(req.body);
     res.status(201).send({
       result: true,
-      message: 'article created'
+      message: 'success'
     });
   } catch (error: any) {
     if (error instanceof ValidationError) {
