@@ -1,7 +1,7 @@
 import { Static, ValidationError } from 'runtypes';
 import { SVRequest, SVResponse } from './../config/request_config';
-import { ArticleCreateResponse } from '../model/article_create_response';
-import ArticleCreateRequest from '../model/article_create_request';
+import { ArticleCreateResponse } from '../model/response/article_create_response';
+import ArticleCreateRequest from '../model/request/article_create_request';
 import ArticleCreateService from '../service/article_create_service';
 
 export default async function ArticleCreateController(

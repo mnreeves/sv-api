@@ -1,7 +1,7 @@
-import { ArticleGetResponse } from './../model/article_get_response';
+import { ArticleGetResponse } from '../model/response/article_get_response';
 import { Static } from 'runtypes';
 import { SVRequest, SVResponse } from './../config/request_config';
-import ArticleGetRequest from '../model/article_get_request';
+import ArticleGetRequest from '../model/request/article_get_request';
 import ArticleGetService from '../service/article_get_service';
 
 

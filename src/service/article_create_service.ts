@@ -1,4 +1,4 @@
-import { PostsTable } from './../model/posts_table';
+import { PostsTable } from '../model/table/posts_table';
 
 type payload = {
   title: string,

@@ -1,6 +1,6 @@
 import { Static } from 'runtypes';
-import ArticleListRequest from '../model/article_list_request';
-import { ArticleListResponse } from '../model/article_list_response';
+import ArticleListRequest from '../model/request/article_list_request';
+import { ArticleListResponse } from '../model/response/article_list_response';
 import ArticleListService from '../service/article_list_service';
 import { SVRequest, SVResponse } from './../config/request_config';
 

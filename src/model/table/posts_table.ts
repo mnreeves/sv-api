@@ -1,4 +1,4 @@
-import { sequelizeConnection } from './../utils/bootstrap_database_authenticate';
+import { sequelizeConnection } from '../../utils/bootstrap_database_authenticate';
 import { Model, InferAttributes, DataTypes, InferCreationAttributes, CreationOptional, Sequelize } from 'sequelize';
 
 export class PostsTable extends Model<InferAttributes<PostsTable>, InferCreationAttributes<PostsTable>> {
