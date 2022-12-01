@@ -9,7 +9,8 @@ export const sequelizeConnection = new Sequelize(
   dbPassword,
   {
     dialect: 'mysql',
-    logging: false
+    logging: false,
+    timezone: '+07:00'
   }
 );
 
