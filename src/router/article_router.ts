@@ -10,6 +10,6 @@ export const articleRouter = Router();
 // register all routes here
 articleRouter.get('/:limit/:offset', ArticleListController);
 articleRouter.get('/:id', ArticleGetController);
-articleRouter.patch('/:id', ArticleUpdateController);
+articleRouter.post('/:id', ArticleUpdateController);
 articleRouter.delete('/:id', ArticleDeleteController);
 articleRouter.post('/', ArticleCreateController);
