@@ -7,7 +7,9 @@ const app = Express();
 const port = Config.applicationPort;
 
 export default function BootstrapExpress() {
-  app.use(Cors());
+  app.use(Cors({
+    origin: ['http://localhost:3002']
+  }));
   app.use(Express.json());
   app.use(Express.urlencoded({ extended: false }));
   app.use('', routerApp);
