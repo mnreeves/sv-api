@@ -22,3 +22,8 @@ the format key and value can be copyed from .env.example, adjust the value based
 ```
 npm run start
 ```
+
+**5. Postman**
+```
+postman can be found in root folder named SV-API.postman_collection.json
+```
