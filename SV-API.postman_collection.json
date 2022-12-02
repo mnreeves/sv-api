@@ -10,14 +10,7 @@
 			"name": "create article",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [],
@@ -49,14 +42,7 @@
 			"name": "article list",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [],
@@ -80,14 +66,7 @@
 			"name": "article detail",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [],
@@ -110,14 +89,7 @@
 			"name": "article update",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [],
@@ -149,14 +121,7 @@
 			"name": "New Request Copy 4",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "DELETE",
 				"header": [],
@@ -170,7 +135,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8003/article/6",
+					"raw": "http://localhost:8003/article/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -178,7 +143,7 @@
 					"port": "8003",
 					"path": [
 						"article",
-						"6"
+						"4"
 					]
 				}
 			},
