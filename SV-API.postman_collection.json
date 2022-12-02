@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "1e4f590a-ac87-4595-8608-51fe75513d34",
+		"name": "SV-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18922018"
+	},
+	"item": [
+		{
+			"name": "create article",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"tiasdasdasdasdas asdas dasdas dasdas\",\r\n  \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n  \"category\": \"asdas\",\r\n  \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8003/article/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"article",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8003/article/10/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"article",
+						"10",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8003/article/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"article",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"tiasdasdasdasdas asdas dasdas dasdas\",\r\n  \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n  \"category\": \"asdas\",\r\n  \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8003/article/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"article",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "L8WqdNPFGeRNgoziHqrTvuMdSQSfAQ0qJmiAaP5VowoDuQlFbqXytCHlZu6ckdbvuJCXG0cNvOUbn1htmoUrsOM9B+Kn9Z4g62P0UIhfCE7qkavnIxLSgFp+CXSxETNswEwSSrag7I5MpgyI2n+3fgdB04t89/1O/w1cDnyilFU=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \" adasd ad adas das a adas dasd asd\",\r\n  \"content\": \"22222222123123122222222222Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n  \"category\": \"as222\",\r\n  \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8003/article/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"article",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
